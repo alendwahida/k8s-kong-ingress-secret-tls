@@ -11,7 +11,7 @@ Tutorial
    ```
 ### 2. Clone this project into your workspace
    ```bash
-   git clone
+   git clone https://github.com/alendwahida/k8s-kong-ingress-secret-tls.git
    ```
 ### 3. Generate your certificate file from ssl provider or letsencrypt
 ### 4. Create secret within ssl certificate into file awn.my.id.crt and key into awn.my.id.key
