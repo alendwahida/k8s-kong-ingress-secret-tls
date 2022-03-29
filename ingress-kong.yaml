@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kong-ingress
+spec:
+  ingressClassName: kong
+  tls:
+  - hosts:
+      - alend.awn.my.id
+    secretName: awn-tls
+
+  rules:
+  - host: alend.awn.my.id
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: base-service
+            port:
+              number: 8080
