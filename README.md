@@ -18,6 +18,7 @@ Tutorial
    ```bash
    kubectl create secret tls awn-tls --key="awn.my.id.key" --cert="awn.my.id.crt"
    ```
+### 5. Output:
+![alt text](https://raw.githubusercontent.com/alendwahida/k8s-kong-ingress-secret-tls/main/blob/kong-ssl-lets-encrypt.jpg)
 
-   source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/
-
+### source: https://docs.konghq.com/gateway/2.8.x/install-and-run/kubernetes/
